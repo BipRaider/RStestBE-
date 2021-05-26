@@ -30,8 +30,7 @@ export const getAllMessages = async (
   next: NextFunction,
 ): Promise<Response> => {
   try {
-    const messages = await MessageModel.find()
-    .sort({ data: -1 });
+    const messages = await MessageModel.find().sort({ data: -1 });
 
     return res.status(200).json(messages);
   } catch (err) {
