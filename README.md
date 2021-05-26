@@ -64,3 +64,10 @@ docker run -p 3001:3001 <id образа в докере>
         3 :         - взаимодействие
         4 container - порт контейнера в докере
         5 id image  -  id  образа в докере
+
+### docker-compose up запустить сборку через compose
+
+Установить докер на пк https://www.docker.com/ перенести файл на уровень выше папок
+docker-compose.yml
+
+-
