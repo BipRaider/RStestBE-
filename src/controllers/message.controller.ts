@@ -16,7 +16,7 @@ export const addMessage = async (
   try {
     const currentMessage = await MessageModel.create({ name, message });
 
-    return res.status(201).json(currentMessage);
+    return res.status(201).json({ ...currentMessage, success: 'Send message' });
   } catch (err) {
     next(err);
   }

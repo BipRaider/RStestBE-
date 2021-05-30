@@ -55,7 +55,7 @@ app.use(errorHandler);
 
 //Start server
 const server = app.listen(env.PORT || 3001, (): void => {
-  console.log(`Server started on port: ${env.PORT}`);
+  console.log(`Server started on port : ${env.PORT}`);
 });
 
 // Close server & exit process
